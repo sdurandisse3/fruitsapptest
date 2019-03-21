@@ -6,7 +6,7 @@ const app = express();
         res.json({'pong': true});
     })
 
-    const port = 5001
+    const port = process.env.PORT||5001
     app.listen(port, () => {
-        console.log(`listening on port ${port}`)
+        console.log(`listheroku createening on port ${port}`)
     })
